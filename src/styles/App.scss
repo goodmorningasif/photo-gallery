@@ -46,11 +46,13 @@
 .leftButton {
   left: 20px;
   transform: rotate(-45deg);
+  cursor: pointer;
 }
 
 .rightButton {
   right: 20px;
   transform: rotate(135deg);
+  cursor: pointer;
 }
 
 .pictureCaption {
