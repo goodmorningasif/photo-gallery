@@ -29,7 +29,6 @@ class AppComponent extends React.Component {
     const { pictureIndx } = this.state;
     const { handleClick } = this;
 
-    console.log("+", pictureIndx);
     return (
       <div>
         <div
@@ -42,8 +41,9 @@ class AppComponent extends React.Component {
                 <div
                   className="picture"
                   style={{ backgroundImage: `url(${image.path})` }}
-                />
-                <span>{image.caption}</span>
+                >
+                  <span className="pictureCaption">{image.caption}</span>
+                </div>
               </div>
             );
           })}

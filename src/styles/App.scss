@@ -25,6 +25,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .leftButton,
@@ -33,18 +34,28 @@
   top: 50%;
   height: 40px;
   width: 40px;
+  border-top: 2px solid grey;
+  border-left: 2px solid grey;
+  &:hover {
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+  }
+  transition: all 0.3s ease-in;
 }
 
 .leftButton {
   left: 20px;
-  border-top: 2px solid grey;
-  border-left: 2px solid grey;
   transform: rotate(-45deg);
 }
 
 .rightButton {
   right: 20px;
-  border-top: 2px solid grey;
-  border-right: 2px solid grey;
-  transform: rotate(45deg);
+  transform: rotate(135deg);
+}
+
+.pictureCaption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
 }
