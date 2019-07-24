@@ -1,6 +1,50 @@
 /* Base Application Styles */
 .galleryWrapper {
-  max-width: 400px;
-  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in;
 }
- 
+
+.pictureWrapper {
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+}
+
+.picture {
+  max-width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.leftButton,
+.rightButton {
+  position: absolute;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.leftButton {
+  left: 20px;
+  border-top: 2px solid grey;
+  border-left: 2px solid grey;
+  transform: rotate(-45deg);
+}
+
+.rightButton {
+  right: 20px;
+  border-top: 2px solid grey;
+  border-right: 2px solid grey;
+  transform: rotate(45deg);
+}
